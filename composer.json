@@ -1,0 +1,16 @@
+{
+    "name": "foundline/phpunit-demo",
+    "description": "Demonstration of How To Use PHPUnit",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "FoundLine": "src/"
+        }
+    }
+}
