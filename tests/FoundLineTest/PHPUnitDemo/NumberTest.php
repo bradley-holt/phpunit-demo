@@ -6,7 +6,7 @@ use FoundLine\PHPUnitDemo\Number;
 
 class NumberTest extends \PHPUnit_Framework_TestCase
 {
-    public function testToString()
+    public function testConvertNumberToString()
     {
         $fivePointSix = new Number('5.6');
         $this->assertSame(
@@ -16,9 +16,9 @@ class NumberTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @depends testToString
+     * @depends testConvertNumberToString
      */
-    public function testAdd()
+    public function testAddTwoNumbers()
     {
         $fivePointSix = new Number('5.6');
         $threePointTwo = new Number('3.2');
@@ -29,9 +29,9 @@ class NumberTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @depends testToString
+     * @depends testConvertNumberToString
      */
-    public function testSub()
+    public function testSubstractTwoNumbers()
     {
         $fivePointSix = new Number('5.6');
         $threePointTwo = new Number('3.2');
@@ -42,9 +42,9 @@ class NumberTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @depends testToString
+     * @depends testConvertNumberToString
      */
-    public function testMul()
+    public function testMultiplyTwoNumbers()
     {
         $fivePointSix = new Number('5.6');
         $threePointTwo = new Number('3.2');
@@ -55,9 +55,9 @@ class NumberTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @depends testToString
+     * @depends testConvertNumberToString
      */
-    public function testDiv()
+    public function testDivideTwoNumbers()
     {
         $fivePointSix = new Number('5.6');
         $threePointTwo = new Number('3.2');
